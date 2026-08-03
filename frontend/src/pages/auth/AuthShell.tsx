@@ -28,30 +28,30 @@ export default function AuthShell({ title, subtitle, children }: {
             'radial-gradient(circle at 85% 85%, rgba(168,85,247,0.20), transparent 45%)',
         }}
       >
-        {/* Top Header with Official Crest & University Name */}
+        {/* Top Header with Official Crest & University Name in Top Left */}
         <Stack direction="row" alignItems="center" spacing={2.5} sx={{ zIndex: 2 }}>
           <Box
             component="img"
             src="/uni-logo.png"
             alt="University of Colombo Crest"
-            sx={{ width: 48, height: 56, objectFit: 'contain', filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.4))' }}
+            sx={{ width: 54, height: 62, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))' }}
           />
           <Box>
-            <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
+            <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.3rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
               University of Colombo
             </Typography>
-            <Typography sx={{ fontFamily: monoFont, fontSize: '0.68rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.85)', mt: 0.35, fontWeight: 600 }}>
+            <Typography sx={{ fontFamily: monoFont, fontSize: '0.7rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.90)', mt: 0.4, fontWeight: 600 }}>
               FACULTY OF SCIENCE
             </Typography>
           </Box>
         </Stack>
 
-        {/* Title Banner */}
-        <Box sx={{ zIndex: 2, my: 'auto', maxWidth: 540 }}>
-          <Typography sx={{ fontFamily: displayFont, fontWeight: 600, fontSize: { md: '2.1rem', lg: '2.5rem' }, lineHeight: 1.25, mb: 1.5, letterSpacing: '-0.01em' }}>
-            Empowering Research &amp; Academic Excellence
+        {/* Title Banner - Lifted Up & Larger Font */}
+        <Box sx={{ zIndex: 2, mt: 7, mb: 'auto', maxWidth: 580 }}>
+          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.6rem', lg: '3.1rem' }, lineHeight: 1.18, mb: 2, letterSpacing: '-0.015em' }}>
+            Empowering Research &amp;<br />Academic Excellence
           </Typography>
-          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.96rem', lineHeight: 1.6 }}>
+          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.05rem', lg: '1.15rem' }, lineHeight: 1.6, maxWidth: 520 }}>
             Centralized management, equipment reservation, and maintenance tracking for the Faculty of Science.
           </Typography>
         </Box>
