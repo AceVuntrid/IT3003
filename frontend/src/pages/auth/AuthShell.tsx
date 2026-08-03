@@ -47,13 +47,64 @@ export default function AuthShell({ title, subtitle, children }: {
         </Stack>
 
         {/* Title Banner - Positioned Lower & Continuous Text */}
-        <Box sx={{ zIndex: 2, mt: 11, mb: 'auto', maxWidth: 640 }}>
-          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.6rem', lg: '3.2rem' }, lineHeight: 1.18, mb: 2, letterSpacing: '-0.015em' }}>
+        <Box sx={{ zIndex: 2, mt: 4, mb: 1, maxWidth: 640 }}>
+          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.3rem', lg: '2.8rem' }, lineHeight: 1.18, mb: 1.5, letterSpacing: '-0.015em' }}>
             Empowering Research &amp; Academic Excellence
           </Typography>
-          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.08rem', lg: '1.18rem' }, lineHeight: 1.6, maxWidth: 560 }}>
+          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.02rem', lg: '1.12rem' }, lineHeight: 1.55, maxWidth: 560 }}>
             Centralized management, equipment reservation, and maintenance tracking for the Faculty of Science.
           </Typography>
+        </Box>
+
+        {/* Middle/Lower Hero Area: Transparent White Building Sketch */}
+        <Box
+          sx={{
+            zIndex: 2,
+            my: 'auto',
+            py: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            width: '100%',
+          }}
+        >
+          {/* Ambient Purple Glow */}
+          <Box
+            sx={{
+              position: 'absolute',
+              width: 520,
+              height: 260,
+              borderRadius: '50%',
+              background: 'radial-gradient(circle, rgba(168,85,247,0.30) 0%, rgba(109,40,217,0) 70%)',
+              filter: 'blur(42px)',
+              pointerEvents: 'none',
+              zIndex: 1,
+            }}
+          />
+
+          {/* Transparent PNG Building Sketch — Pure White Sketch Lines Only */}
+          <Box
+            component="img"
+            src="/assets/university_building.png"
+            alt="University Main Building Line Sketch"
+            sx={{
+              width: '100%',
+              maxWidth: 820,
+              maxHeight: 420,
+              objectFit: 'contain',
+              filter: 'drop-shadow(0 0 24px rgba(255,255,255,0.45)) brightness(1.15)',
+              opacity: 0.98,
+              zIndex: 2,
+              transform: 'translateY(10px)',
+              transition: 'transform 0.4s ease, filter 0.4s ease',
+              '&:hover': {
+                transform: 'translateY(10px) scale(1.02)',
+                filter: 'drop-shadow(0 0 34px rgba(255,255,255,0.7)) brightness(1.2)',
+              },
+            }}
+          />
         </Box>
 
         {/* Footer */}
