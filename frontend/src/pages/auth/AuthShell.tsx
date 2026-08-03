@@ -28,15 +28,23 @@ export default function AuthShell({ title, subtitle, children }: {
             'radial-gradient(circle at 85% 85%, rgba(168,85,247,0.20), transparent 45%)',
         }}
       >
-        {/* Top Header with University Name */}
-        <Box sx={{ zIndex: 2 }}>
-          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
-            University of Colombo
-          </Typography>
-          <Typography sx={{ fontFamily: monoFont, fontSize: '0.68rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.85)', mt: 0.35, fontWeight: 600 }}>
-            FACULTY OF SCIENCE
-          </Typography>
-        </Box>
+        {/* Top Header with Official Crest & University Name */}
+        <Stack direction="row" alignItems="center" spacing={2.5} sx={{ zIndex: 2 }}>
+          <Box
+            component="img"
+            src="/uni-logo.png"
+            alt="University of Colombo Crest"
+            sx={{ width: 48, height: 56, objectFit: 'contain', filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.4))' }}
+          />
+          <Box>
+            <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
+              University of Colombo
+            </Typography>
+            <Typography sx={{ fontFamily: monoFont, fontSize: '0.68rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.85)', mt: 0.35, fontWeight: 600 }}>
+              FACULTY OF SCIENCE
+            </Typography>
+          </Box>
+        </Stack>
 
         {/* Title Banner */}
         <Box sx={{ zIndex: 2, my: 'auto', maxWidth: 540 }}>
@@ -58,14 +66,17 @@ export default function AuthShell({ title, subtitle, children }: {
       <Box sx={{ flex: 1, display: 'grid', placeItems: 'center', p: { xs: 3, sm: 4 }, backgroundColor: '#F4F0FA' }}>
         <Card variant="outlined" sx={{ width: '100%', maxWidth: 420, borderRadius: 3.5, boxShadow: '0 20px 50px rgba(19,6,36,0.07)', borderColor: '#E5DEF0', background: '#FFFFFF' }}>
           <CardContent sx={{ p: { xs: 3.5, sm: 4.5 } }}>
-            <Box sx={{ mb: 3, display: { xs: 'block', md: 'none' } }}>
-              <Typography variant="subtitle1" fontWeight={700} color="primary.main" lineHeight={1.1}>
-                University of Colombo
-              </Typography>
-              <Typography variant="caption" color="text.secondary">
-                Faculty of Science (FOS)
-              </Typography>
-            </Box>
+            <Stack direction="row" alignItems="center" spacing={1.75} sx={{ mb: 3, display: { xs: 'flex', md: 'none' } }}>
+              <Box component="img" src="/uni-logo.png" alt="University Crest" sx={{ width: 38, height: 44 }} />
+              <Box>
+                <Typography variant="subtitle1" fontWeight={700} color="primary.main" lineHeight={1.1}>
+                  University of Colombo
+                </Typography>
+                <Typography variant="caption" color="text.secondary">
+                  Faculty of Science (FOS)
+                </Typography>
+              </Box>
+            </Stack>
 
             <Typography variant="h5" fontWeight={600} letterSpacing="-0.01em" gutterBottom>{title}</Typography>
             {subtitle && (
