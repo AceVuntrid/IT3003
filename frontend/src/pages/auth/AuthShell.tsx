@@ -74,35 +74,35 @@ export default function AuthShell({ title, subtitle, children }: {
           <Box
             sx={{
               position: 'absolute',
-              width: 540,
-              height: 270,
+              width: 680,
+              height: 340,
               borderRadius: '50%',
-              background: 'radial-gradient(circle, rgba(192,132,252,0.35) 0%, rgba(124,58,237,0) 70%)',
-              filter: 'blur(45px)',
+              background: 'radial-gradient(circle, rgba(192,132,252,0.38) 0%, rgba(124,58,237,0) 70%)',
+              filter: 'blur(50px)',
               pointerEvents: 'none',
               zIndex: 1,
             }}
           />
 
-          {/* Transparent PNG Building Sketch — Pure White Sketch Lines Only */}
+          {/* Transparent PNG Building Sketch — Significantly Enlarged */}
           <Box
             component="img"
-            src="/assets/university_building.png?v=pure_white_transparent_v3"
+            src="/assets/university_building.png?v=pure_white_transparent_v4"
             alt="University Main Building Line Sketch"
             sx={{
-              width: '100%',
-              maxWidth: 840,
-              maxHeight: 440,
+              width: '110%',
+              maxWidth: 1150,
+              maxHeight: 580,
               objectFit: 'contain',
               mixBlendMode: 'screen',
-              filter: 'drop-shadow(0 0 24px rgba(255,255,255,0.5)) brightness(1.2) contrast(1.2)',
+              filter: 'drop-shadow(0 0 28px rgba(255,255,255,0.55)) brightness(1.2) contrast(1.2)',
               opacity: 1,
               zIndex: 2,
-              transform: 'translateY(10px)',
+              transform: 'translateY(12px)',
               transition: 'transform 0.4s ease, filter 0.4s ease',
               '&:hover': {
-                transform: 'translateY(10px) scale(1.02)',
-                filter: 'drop-shadow(0 0 36px rgba(255,255,255,0.75)) brightness(1.25)',
+                transform: 'translateY(12px) scale(1.025)',
+                filter: 'drop-shadow(0 0 42px rgba(255,255,255,0.8)) brightness(1.28)',
               },
             }}
           />
