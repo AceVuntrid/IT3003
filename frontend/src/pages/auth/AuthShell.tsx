@@ -66,13 +66,19 @@ export default function AuthShell({ title, subtitle, children }: {
       <Box sx={{ flex: 1, display: 'grid', placeItems: 'center', p: { xs: 3, sm: 4 }, backgroundColor: '#F4F0FA' }}>
         <Card variant="outlined" sx={{ width: '100%', maxWidth: 420, borderRadius: 3.5, boxShadow: '0 20px 50px rgba(19,6,36,0.07)', borderColor: '#E5DEF0', background: '#FFFFFF' }}>
           <CardContent sx={{ p: { xs: 3.5, sm: 4.5 } }}>
-            <Stack direction="row" alignItems="center" spacing={1.75} sx={{ mb: 3, display: { xs: 'flex', md: 'none' } }}>
-              <Box component="img" src="/uni-logo.png" alt="University Crest" sx={{ width: 38, height: 44 }} />
+            {/* Crest Header - Always Visible on Sign-In Card */}
+            <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 3 }}>
+              <Box
+                component="img"
+                src="/uni-logo.png"
+                alt="University Crest"
+                sx={{ width: 44, height: 52, objectFit: 'contain' }}
+              />
               <Box>
-                <Typography variant="subtitle1" fontWeight={700} color="primary.main" lineHeight={1.1}>
+                <Typography variant="subtitle1" fontWeight={700} color="primary.main" lineHeight={1.15}>
                   University of Colombo
                 </Typography>
-                <Typography variant="caption" color="text.secondary">
+                <Typography variant="caption" color="text.secondary" fontWeight={500}>
                   Faculty of Science (FOS)
                 </Typography>
               </Box>
