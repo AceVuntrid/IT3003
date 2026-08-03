@@ -84,10 +84,10 @@ export default function AuthShell({ title, subtitle, children }: {
             }}
           />
 
-          {/* Transparent PNG Building Sketch — Significantly Enlarged */}
+          {/* Transparent 4K Ultra-Sharp Building Sketch */}
           <Box
             component="img"
-            src="/assets/university_building.png?v=pure_white_transparent_v4"
+            src="/assets/university_building.png?v=4k_ultra_sharp_v5"
             alt="University Main Building Line Sketch"
             sx={{
               width: '110%',
@@ -95,14 +95,14 @@ export default function AuthShell({ title, subtitle, children }: {
               maxHeight: 580,
               objectFit: 'contain',
               mixBlendMode: 'screen',
-              filter: 'drop-shadow(0 0 28px rgba(255,255,255,0.55)) brightness(1.2) contrast(1.2)',
+              filter: 'drop-shadow(0 0 28px rgba(255,255,255,0.55)) brightness(1.2) contrast(1.25)',
               opacity: 1,
               zIndex: 2,
               transform: 'translateY(12px)',
               transition: 'transform 0.4s ease, filter 0.4s ease',
               '&:hover': {
                 transform: 'translateY(12px) scale(1.025)',
-                filter: 'drop-shadow(0 0 42px rgba(255,255,255,0.8)) brightness(1.28)',
+                filter: 'drop-shadow(0 0 42px rgba(255,255,255,0.82)) brightness(1.28)',
               },
             }}
           />
