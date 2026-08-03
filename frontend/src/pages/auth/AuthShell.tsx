@@ -10,22 +10,22 @@ export default function AuthShell({ title, subtitle, children }: {
 }) {
   return (
     <Box sx={{ minHeight: '100vh', display: 'flex' }}>
-      {/* Left Dominant Royal Purple Hero Panel (68% width on desktop) */}
+      {/* Left Dominant Bright Royal Purple Hero Panel (68% width on desktop) */}
       <Box
         sx={{
           display: { xs: 'none', md: 'flex' },
           flexDirection: 'column',
           justifyContent: 'space-between',
           width: { md: '64%', lg: '68%' },
-          backgroundColor: '#110524',
+          backgroundColor: '#23074D',
           color: '#fff',
           p: { md: 6, lg: 7 },
           position: 'relative',
           overflow: 'hidden',
           backgroundImage:
-            'radial-gradient(circle at 45% 40%, rgba(124,58,237,0.48), transparent 65%),' +
-            'radial-gradient(circle at 15% 15%, rgba(147,51,234,0.35), transparent 50%),' +
-            'radial-gradient(circle at 85% 85%, rgba(168,85,247,0.28), transparent 45%)',
+            'radial-gradient(circle at 45% 40%, rgba(147,51,234,0.55), transparent 65%),' +
+            'radial-gradient(circle at 15% 15%, rgba(168,85,247,0.40), transparent 50%),' +
+            'radial-gradient(circle at 85% 85%, rgba(192,132,252,0.30), transparent 45%)',
         }}
       >
         {/* Top Header with Official Crest & University Name in Top Left */}
@@ -34,13 +34,13 @@ export default function AuthShell({ title, subtitle, children }: {
             component="img"
             src="/uni-logo.png"
             alt="University of Colombo Crest"
-            sx={{ width: 56, height: 64, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))' }}
+            sx={{ width: 56, height: 64, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.3))' }}
           />
           <Box>
             <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.35rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
               University of Colombo
             </Typography>
-            <Typography sx={{ fontFamily: monoFont, fontSize: '0.72rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.90)', mt: 0.4, fontWeight: 600 }}>
+            <Typography sx={{ fontFamily: monoFont, fontSize: '0.72rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.92)', mt: 0.4, fontWeight: 600 }}>
               FACULTY OF SCIENCE
             </Typography>
           </Box>
@@ -51,7 +51,7 @@ export default function AuthShell({ title, subtitle, children }: {
           <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.3rem', lg: '2.8rem' }, lineHeight: 1.18, mb: 1.5, letterSpacing: '-0.015em' }}>
             Empowering Research &amp; Academic Excellence
           </Typography>
-          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.02rem', lg: '1.12rem' }, lineHeight: 1.55, maxWidth: 560 }}>
+          <Typography sx={{ color: 'rgba(255,255,255,0.88)', fontSize: { md: '1.02rem', lg: '1.12rem' }, lineHeight: 1.55, maxWidth: 560 }}>
             Centralized management, equipment reservation, and maintenance tracking for the Faculty of Science.
           </Typography>
         </Box>
@@ -70,15 +70,15 @@ export default function AuthShell({ title, subtitle, children }: {
             width: '100%',
           }}
         >
-          {/* Ambient Purple Glow */}
+          {/* Ambient Vibrant Purple Glow */}
           <Box
             sx={{
               position: 'absolute',
-              width: 520,
-              height: 260,
+              width: 540,
+              height: 270,
               borderRadius: '50%',
-              background: 'radial-gradient(circle, rgba(168,85,247,0.30) 0%, rgba(109,40,217,0) 70%)',
-              filter: 'blur(42px)',
+              background: 'radial-gradient(circle, rgba(192,132,252,0.35) 0%, rgba(124,58,237,0) 70%)',
+              filter: 'blur(45px)',
               pointerEvents: 'none',
               zIndex: 1,
             }}
@@ -87,21 +87,22 @@ export default function AuthShell({ title, subtitle, children }: {
           {/* Transparent PNG Building Sketch — Pure White Sketch Lines Only */}
           <Box
             component="img"
-            src="/assets/university_building.png"
+            src="/assets/university_building.png?v=pure_white_transparent_v3"
             alt="University Main Building Line Sketch"
             sx={{
               width: '100%',
-              maxWidth: 820,
-              maxHeight: 420,
+              maxWidth: 840,
+              maxHeight: 440,
               objectFit: 'contain',
-              filter: 'drop-shadow(0 0 24px rgba(255,255,255,0.45)) brightness(1.15)',
-              opacity: 0.98,
+              mixBlendMode: 'screen',
+              filter: 'drop-shadow(0 0 24px rgba(255,255,255,0.5)) brightness(1.2) contrast(1.2)',
+              opacity: 1,
               zIndex: 2,
               transform: 'translateY(10px)',
               transition: 'transform 0.4s ease, filter 0.4s ease',
               '&:hover': {
                 transform: 'translateY(10px) scale(1.02)',
-                filter: 'drop-shadow(0 0 34px rgba(255,255,255,0.7)) brightness(1.2)',
+                filter: 'drop-shadow(0 0 36px rgba(255,255,255,0.75)) brightness(1.25)',
               },
             }}
           />
