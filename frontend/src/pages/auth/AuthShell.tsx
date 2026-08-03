@@ -46,10 +46,10 @@ export default function AuthShell({ title, subtitle, children }: {
           </Box>
         </Stack>
 
-        {/* Title Banner - Lifted Up & Larger Font */}
-        <Box sx={{ zIndex: 2, mt: 7, mb: 'auto', maxWidth: 580 }}>
-          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.6rem', lg: '3.1rem' }, lineHeight: 1.18, mb: 2, letterSpacing: '-0.015em' }}>
-            Empowering Research &amp;<br />Academic Excellence
+        {/* Title Banner - Positioned Lower & Continuous Text */}
+        <Box sx={{ zIndex: 2, mt: 11, mb: 'auto', maxWidth: 580 }}>
+          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.4rem', lg: '2.9rem' }, lineHeight: 1.2, mb: 2, letterSpacing: '-0.015em' }}>
+            Empowering Research &amp; Academic Excellence
           </Typography>
           <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.05rem', lg: '1.15rem' }, lineHeight: 1.6, maxWidth: 520 }}>
             Centralized management, equipment reservation, and maintenance tracking for the Faculty of Science.
