@@ -10,22 +10,22 @@ export default function AuthShell({ title, subtitle, children }: {
 }) {
   return (
     <Box sx={{ minHeight: '100vh', display: 'flex' }}>
-      {/* Left Premium Dark Hero Panel (58% width on desktop) */}
+      {/* Left Dominant Royal Purple Hero Panel (68% width on desktop) */}
       <Box
         sx={{
           display: { xs: 'none', md: 'flex' },
           flexDirection: 'column',
           justifyContent: 'space-between',
-          width: { md: '54%', lg: '58%' },
-          backgroundColor: '#0E051C',
+          width: { md: '64%', lg: '68%' },
+          backgroundColor: '#110524',
           color: '#fff',
-          p: { md: 5, lg: 6 },
+          p: { md: 6, lg: 7 },
           position: 'relative',
           overflow: 'hidden',
           backgroundImage:
-            'radial-gradient(circle at 50% 45%, rgba(109,40,217,0.40), transparent 65%),' +
-            'radial-gradient(circle at 15% 15%, rgba(124,58,237,0.25), transparent 50%),' +
-            'radial-gradient(circle at 85% 85%, rgba(168,85,247,0.20), transparent 45%)',
+            'radial-gradient(circle at 45% 40%, rgba(124,58,237,0.48), transparent 65%),' +
+            'radial-gradient(circle at 15% 15%, rgba(147,51,234,0.35), transparent 50%),' +
+            'radial-gradient(circle at 85% 85%, rgba(168,85,247,0.28), transparent 45%)',
         }}
       >
         {/* Top Header with Official Crest & University Name in Top Left */}
@@ -34,38 +34,38 @@ export default function AuthShell({ title, subtitle, children }: {
             component="img"
             src="/uni-logo.png"
             alt="University of Colombo Crest"
-            sx={{ width: 54, height: 62, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))' }}
+            sx={{ width: 56, height: 64, objectFit: 'contain', filter: 'drop-shadow(0 4px 14px rgba(0,0,0,0.45))' }}
           />
           <Box>
-            <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.3rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
+            <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: '1.35rem', letterSpacing: '0.01em', lineHeight: 1.15 }}>
               University of Colombo
             </Typography>
-            <Typography sx={{ fontFamily: monoFont, fontSize: '0.7rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.90)', mt: 0.4, fontWeight: 600 }}>
+            <Typography sx={{ fontFamily: monoFont, fontSize: '0.72rem', letterSpacing: '0.18em', color: 'rgba(255,255,255,0.90)', mt: 0.4, fontWeight: 600 }}>
               FACULTY OF SCIENCE
             </Typography>
           </Box>
         </Stack>
 
         {/* Title Banner - Positioned Lower & Continuous Text */}
-        <Box sx={{ zIndex: 2, mt: 11, mb: 'auto', maxWidth: 580 }}>
-          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.4rem', lg: '2.9rem' }, lineHeight: 1.2, mb: 2, letterSpacing: '-0.015em' }}>
+        <Box sx={{ zIndex: 2, mt: 11, mb: 'auto', maxWidth: 640 }}>
+          <Typography sx={{ fontFamily: displayFont, fontWeight: 700, fontSize: { md: '2.6rem', lg: '3.2rem' }, lineHeight: 1.18, mb: 2, letterSpacing: '-0.015em' }}>
             Empowering Research &amp; Academic Excellence
           </Typography>
-          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.05rem', lg: '1.15rem' }, lineHeight: 1.6, maxWidth: 520 }}>
+          <Typography sx={{ color: 'rgba(255,255,255,0.85)', fontSize: { md: '1.08rem', lg: '1.18rem' }, lineHeight: 1.6, maxWidth: 560 }}>
             Centralized management, equipment reservation, and maintenance tracking for the Faculty of Science.
           </Typography>
         </Box>
 
         {/* Footer */}
-        <Typography sx={{ fontFamily: monoFont, fontSize: '0.66rem', color: 'rgba(255,255,255,0.55)', zIndex: 2, letterSpacing: '0.12em' }}>
+        <Typography sx={{ fontFamily: monoFont, fontSize: '0.68rem', color: 'rgba(255,255,255,0.55)', zIndex: 2, letterSpacing: '0.12em' }}>
           UNIVERSITY OF COLOMBO · FACULTY OF SCIENCE
         </Typography>
       </Box>
 
-      {/* Right Sign-In Form Container - Enterprise Grade */}
-      <Box sx={{ flex: 1, display: 'grid', placeItems: 'center', p: { xs: 3, sm: 4 }, backgroundColor: '#F4F0FA' }}>
-        <Card variant="outlined" sx={{ width: '100%', maxWidth: 420, borderRadius: 3.5, boxShadow: '0 20px 50px rgba(19,6,36,0.07)', borderColor: '#E5DEF0', background: '#FFFFFF' }}>
-          <CardContent sx={{ p: { xs: 3.5, sm: 4.5 } }}>
+      {/* Right Sign-In Form Container - Compact & Sleek */}
+      <Box sx={{ flex: 1, display: 'grid', placeItems: 'center', p: { xs: 2.5, sm: 3.5 }, backgroundColor: '#F3EEF9' }}>
+        <Card variant="outlined" sx={{ width: '100%', maxWidth: 380, borderRadius: 3, boxShadow: '0 16px 40px rgba(17,5,36,0.08)', borderColor: '#E4DAF2', background: '#FFFFFF' }}>
+          <CardContent sx={{ p: { xs: 3, sm: 3.75 } }}>
             {/* Crest Header - Always Visible on Sign-In Card */}
             <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 3 }}>
               <Box
